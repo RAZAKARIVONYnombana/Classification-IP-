@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Entrer d'une IP </title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 20px;
+                background-color: dodgerblue;
+            }
+            container {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: rgb(0, 139, 7);
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgb(from color r g b);
+            }
+            h1 {
+                text-align: center;
+            }
+            label {
+                display:block;
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+            input [type="text"]{
+                whidth:calc(100% - 20px);
+                padding: 10px;
+                margin-botton: 16px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            input [type="submit"]{
+                xhidth: 100%;
+                padding:10px;
+                background-color: aqua;
+                border: none;
+                border-radius: 4px;
+                color:azure;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            input [type="submit"]:hover{
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1> Formulaire d'une adresse IP </h1>
+            <form method="get" action="verification_ip.cgi">
+                <label for="ip"> Entrer votre adresse IP : </label>
+                <input type="text" id="ip" name="ip">
+                <input type="submit" value="Soumettre">
+            </form>
+    </body>
+</html>
